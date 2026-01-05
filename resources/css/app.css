@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../../storage/framework/views/*.php";
+
+@plugin "daisyui" {
+  themes: all;
+}
+
+@theme {
+  --font-incung: "AksaraIncung", ui-sans-serif, system-ui;
+}
+
+@font-face {
+    font-family: 'AksaraIncung';
+    src: url("/public/fonts/Incungsanserif-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
